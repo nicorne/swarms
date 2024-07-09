@@ -775,7 +775,7 @@ class Agent(BaseStructure):
                                 else (task_prompt, img, *args)
                             )
                             response = self.llm(*response_args, **kwargs)
-                            response = f"\033[34m{response}\033[0m"
+                            response = f"\033[1;35m{self.name.upper()}:\033[0m \033[34m{response}\033[0m"
 
                             # Print
                             if self.streaming_on is True:
