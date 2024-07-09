@@ -14,7 +14,7 @@ logger.add(
     format="<red>{time}</red> - <level>{level}</level> - <level>{message}</level>",
 )
 logger.add(
-    "error.log", level="ERROR", format="{time} - {level} - {message}"
+    "logs/error.log", level="ERROR", format="{time} - {level} - {message}"
 )
 
 

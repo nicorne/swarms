@@ -406,7 +406,7 @@ class Agent(BaseStructure):
         # Set the logger handler
         if exists(logger_handler):
             logger.add(
-                f"{self.agent_name}.log",
+                f"logs/{self.agent_name}.log",
                 level="INFO",
                 colorize=True,
                 format=("<green>{time}</green> <level>{message}</level>"),

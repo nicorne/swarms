@@ -198,7 +198,7 @@ class BaseLLM(ABC):
         """Clear history"""
         self.history = []
 
-    def enable_logging(self, log_file: str = "model.log"):
+    def enable_logging(self, log_file: str = "logs/model.log"):
         """Initialize logging for the model."""
         logging.basicConfig(filename=log_file, level=logging.INFO)
         self.log_file = log_file

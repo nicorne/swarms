@@ -83,8 +83,8 @@ class Logger:
         if not os.path.exists(log_dir):
             os.makedirs(log_dir)
 
-        log_file = "activity.log"
-        error_file = "error.log"
+        log_file = "logs/activity.log"
+        error_file = "logs/error.log"
 
         console_formatter = AutoGptFormatter("%(title_color)s %(message)s")
 

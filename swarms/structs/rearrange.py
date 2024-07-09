@@ -53,7 +53,7 @@ class AgentRearrange(BaseSwarm):
 
         # Verbose is True
         if verbose is True:
-            logger.add("agent_rearrange.log")
+            logger.add("logs/agent_rearrange.log")
 
         # Memory system
         if memory_system is not None:

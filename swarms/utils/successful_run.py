@@ -12,7 +12,7 @@ logger.add(
     format="<green>{time}</green> - <level>{level}</level> - <level>{message}</level>",
 )
 
-logger.add("info.log", level="INFO", format="{time} - {level} - {message}")
+logger.add("logs/info.log", level="INFO", format="{time} - {level} - {message}")
 
 
 def log_success_message() -> None:
