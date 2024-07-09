@@ -89,27 +89,3 @@ class ConcurrentWorkflow:
             logger.error(f"Error in concurrent workflow: {e}")
 
         return None
-
-
-# Load the environment variables
-load_dotenv()
-
-# Get the API key from the environment
-api_key = os.environ.get("OPENAI_API_KEY")
-
-# Initialize the language model (assuming this should be done outside the class and passed to it)
-llm = OpenAIChat(temperature=0.5, openai_api_key=api_key, max_tokens=4000)
-
-# Initialize agents
-agents = [
-    Agent(llm=llm, max_loops=1, autosave=True, dashboard=True)
-    for _ in range(1)
-]
-
-# Task to be executed by each agent
-task = "Generate a 10,000 word blog on health and wellness."
-
-# Initialize and run the ConcurrentWorkflow
-workflow = ConcurrentWorkflow(agents=agents, max_loops=1)
-result = workflow.run(task)
-logger.info(f"Final result: {result}")
