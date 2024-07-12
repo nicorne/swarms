@@ -1,3 +1,20 @@
+"""
+* WORKING
+TODO: Clean commented lines
+
+What this script does:
+Agents that is prompted a task and then interacts with user
+
+Requirements:
+Add the folowing API key(s) in your .env file:
+   - OPENAI_API_KEY (or change the LLM below)
+
+Note: 
+If you are running playground examples in the project files directly (without swarms installed via PIP),
+make sure to add the project root to your PYTHONPATH by running the following command in the project's root directory:
+  'export PYTHONPATH=$(pwd):$PYTHONPATH'
+"""
+
 from swarms import Agent, OpenAIChat
 
 ## Initialize the workflow

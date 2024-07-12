@@ -1,6 +1,31 @@
+"""
+! FIXME
+TODO: Clean commented lines
+? Dashboard field in Agent
+
+What this script does:
+Long term memory example using ChromaDB
+
+Requirements:
+Add the folowing API key(s) in your .env file:
+   - OPENAI_API_KEY (or change the LLM below)
+
+Note: 
+If you are running playground examples in the project files directly (without swarms installed via PIP),
+make sure to add the project root to your PYTHONPATH by running the following command in the project's root directory:
+  'export PYTHONPATH=$(pwd):$PYTHONPATH'
+"""
+
 from swarms import Agent, OpenAIChat
 from swarms_memory import ChromaDB
 from swarms.models.tiktoken_wrapper import TikTokenizer
+
+# Populating vector database
+chromadb = ChromaDB(
+    metric="cosine",
+    output_dir="scp",
+    docs_folder="../../artifacts",
+)
 
 # Initialize the agent
 agent = Agent(

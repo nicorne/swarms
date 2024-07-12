@@ -1,3 +1,21 @@
+"""
+! FIXME: Error generating response: expected string or bytes-like object
+
+What this script does:
+Swarm of agents finding the best deal on Tesla's Cybertruck using Multion
+
+Requirements:
+1. Create an account with multion.ai and run 'pip install multion'
+2. Add the folowing API keys in your .env file:
+   - MULTION_API_KEY
+   - OPENAI_API_KEY
+
+Note: 
+If you are running playground examples in the project files directly (without swarms installed via PIP),
+make sure to add the project root to your PYTHONPATH by running the following command in the project's root directory:
+  'export PYTHONPATH=$(pwd):$PYTHONPATH'
+"""
+
 from swarms import Agent, AgentRearrange, OpenAIChat
 from swarms.agents.multion_wrapper import MultiOnAgent
 
