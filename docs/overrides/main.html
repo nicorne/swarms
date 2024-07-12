@@ -7,3 +7,56 @@
     <a href="https://github.com/kyegomez/swarms">Star and contribute</a> to Swarms on GitHub!
   </div>
 {% endblock %}
+
+{% block extrahead %}
+  <div id="maintenance">
+    <img src="assets/img/swarms-logo.png" alt="swarms logo">
+    <p>
+      <h1>Got time to read docs? </h1> 
+      <h2> Must be a slow day. <u>Hackers</u> just copy <a href="https://github.com/kyegomez/swarms/tree/master/playground" style="color: green;">examples</a> and break stuff.</h2>
+      <h2>Fork the <a href="https://github.com/kyegomez/swarms/" style="color: rgb(163, 11, 163);">official repo</a> and get started.</h2>
+      <h2>Need help? Join the <a href="https://discord.gg/agora-999382051935506503" style="color: red;">Discord</a>.</h2>
+      <h2>Follow us on <a href="https://twitter.com/swarms_corp/" style="color: rgb(55, 55, 223);">X</a>.</h2>
+    </p>
+  </div>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+      color: white;
+      text-align: center;
+    }
+    #maintenance {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+    #maintenance img {
+      max-width: 150px;
+      margin-bottom: 20px;
+    }
+    /* Hide the rest of the content */
+    .md-header,
+    .md-sidebar,
+    .md-content,
+    .md-footer,
+    .md-tabs {
+      display: none !important;
+    }
+  </style>
+{% endblock %}
