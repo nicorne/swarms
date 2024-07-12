@@ -754,7 +754,7 @@ class Agent(BaseStructure):
                             response = self.llm(
                                 task_prompt, *args, **kwargs
                             )
-                            print(response)
+                            print(f"\033[1;35m{self.name.upper()}:\033[0m \033[34m{response}\033[0m")
 
                             self.short_memory.add(
                                 role=self.agent_name, content=response
@@ -779,9 +779,9 @@ class Agent(BaseStructure):
 
                             # Print
                             if self.streaming_on is True:
-                                response = self.stream_response(response)
+                                response = self.stream_response(f"\033[34m{response}\033[0m")
                             else:
-                                print(response)
+                                print(f"\033[1;35m{self.name.upper()}:\033[0m \033[34m{response}\033[0m")
 
                             # Add the response to the memory
                             self.short_memory.add(
