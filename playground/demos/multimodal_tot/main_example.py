@@ -1,4 +1,22 @@
 """
+? TO TEST
+
+What this script does:
+
+
+Requirements:
+1. Add the folowing API key(s) in your .env file:
+   - OPENAI_API_KEY
+   - ..
+2. 
+
+Note: 
+If you are running playground examples in the project files directly (without swarms installed via PIP),
+make sure to add the project root to your PYTHONPATH by running the following command in the project's root directory:
+  'export PYTHONPATH=$(pwd):$PYTHONPATH'
+"""
+
+"""
 Multi Modal tree of thoughts that leverages the GPT-4 language model and the
 Stable Diffusion model to generate a multimodal output and evaluate the
 output based a metric from 0.0 to 1.0 and then run a search algorithm using DFS and BFS and return the best output.

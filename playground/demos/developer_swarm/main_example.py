@@ -1,4 +1,23 @@
 """
+? TO TEST
+
+What this script does:
+
+
+Requirements:
+1. Add the folowing API key(s) in your .env file:
+   - OPENAI_API_KEY
+   - AGENTOPS_API_KEY
+2. 
+
+Note: 
+If you are running playground examples in the project files directly (without swarms installed via PIP),
+make sure to add the project root to your PYTHONPATH by running the following command in the project's root directory:
+  'export PYTHONPATH=$(pwd):$PYTHONPATH'
+"""
+
+
+"""
 Swarm of developers that write documentation and tests for a given code snippet.
 
 This is a simple example of how to use the swarms library to create a swarm of developers that write documentation and tests for a given code snippet.
